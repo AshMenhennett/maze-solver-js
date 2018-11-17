@@ -1,0 +1,98 @@
+/* Main */
+body {
+	min-width: 1300px;
+	min-height: 600px;
+	background: #dff9fb;
+}
+h1 {
+	font-family: Quicksand, sans-serif;
+	font-size: 3em;
+	text-align: center;
+	padding-bottom: 10px;
+	color: #130f40;
+	text-shadow: 1px 1px 1px #eee;
+}
+#maze {
+	float: left;
+}
+div#maze div.row div {
+	display: inline-block;
+	padding: 20px;
+	background: #97bed2;
+	color: #525151;
+	cursor: pointer;
+}
+
+/* Cells */
+.visited {
+	background: #4834d4 !important;
+	color: #fff !important;
+}
+.wall {
+	background: #130f40 !important;
+	color: #fff !important;
+}
+.entry {
+	background: #22a6b3 !important;
+	color: #fff !important;
+}
+.exit {
+	background: #eb4d4b !important;
+	color: #fff !important;
+}
+
+/* Controls */
+.btns {
+	float: right;
+	margin-top: 40px;
+	font-family: sans-serif;
+}
+.btn {
+	background: #be2edd;
+	color: #fff;
+	font-size: 30px;
+	margin-bottom: 3px;
+	padding: 10px;
+	cursor: pointer;
+	border: 3px solid #130f40;
+}
+.btn-learn {
+	background: #f0932b;
+} .btn-learn > a {
+	color: #333;
+	text-decoration: none;
+}
+.btn-start-dfs {
+	background: #6ab04c;
+}
+.btn-start-bfs {
+	background: #f9ca24;
+	color: #525151;
+}
+
+/* Utility */
+.no-pointer {
+	cursor: default !important;
+}
+footer {
+	padding-top: 1px;
+	text-align: center;
+	clear: both;
+}
+.modal {
+	max-width: 1000px;
+	font-size: 1.5em;
+	text-align: center;
+}
+hr {
+	border-color: #130f40;
+}
+input#speedInput {
+	width: 40%;
+	font-size: 20px;
+	padding: 4px;
+}
+input[disabled] {
+	background: #ccc;
+	color: #ddd;
+}

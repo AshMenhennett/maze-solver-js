@@ -1,0 +1,82 @@
+<html>
+	<head>
+		<title>Graph Theory - Maze Example</title>
+		<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+		<link rel="stylesheet" href="css/jquery.modal.min.css" />
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+	<body>
+		<header><h1>Maze Builder - Application of Graph Theory</h1></header>
+		<div id="maze"></div>
+		<div class="btns">
+			<label for="speedInput">Increase Speed</label>&nbsp;&nbsp; <input id="speedInput" type="number" step="10" min="1" max="100" value="1">
+			<div class="btn btn-learn"><a href="#whatisitgraph" rel="modal:open">What is Graph Theory?</a></div>
+			<div class="btn btn-learn"><a href="#whatisitgame" rel="modal:open">How Do I Use it?</a></div>
+			<div class="btn btn-start-dfs">Do DFS</div>
+			<div class="btn btn-start-bfs">Do BFS</div>
+			<hr>
+			<div class="btn btn-wall">Add Wall</div>
+			<div class="btn btn-entry">Add Start</div>
+			<div class="btn btn-exit">Add Exit</div>
+		</div>
+
+		<div id="whatisitgraph" class="modal">
+ 			<h3>Thank you for taking the time to learn about Graph Theory!</h3>
+
+ 			<p>Graph Theory is the exciting study of a Mathematical construct- called a Graph.</p>
+			
+			<h3>Why are Graphs so cool?</h3>
+ 			<p>We can reduce many problems in Mathematics and Computer Science to that of a Graph; we can apply standard processes to and solve problems efficiently and in an elegant manner.</p>
+
+ 			<h3>So.. what are some things we can solve with Graphs?</h3>
+ 			<p>Think about a <em>Social Network</em>, like <strong>FaceBook</strong> - millions of users, all connected in one distributed logical network.</p>
+
+ 			<h5>How could we suggest a new friend to someone?</h5> 
+ 			<p>
+ 				To do that we might want to think about the state of the users- from this we can derive suggestions related to their FaceBook social network.
+ 				<br>
+ 				How can we go about that? Well, we could target the users' interests and network (immediate Friends, n-th degree friends) etc.
+ 				<br>
+ 				Let's say we want to suggest new friends to a user, when another user has similar interests (lets say atleast 3 of the same interests) and who are no further than 2 users away from each other (a <em>3-rd Degree</em> relationship).
+ 				<br>
+ 				We can traverse the Localised Social Network and find these relations according to the above requirement and create notifications- alerting the involved users, recommending the relationship based on their interests and position on the Network.
+ 			</p>
+
+ 			<h4>Other areas of moden interest Include things like Web Searching, Context based operations or even fundamental logistical orriented problems (there are way more than I could list!).</h4>
+
+			<h4>Have a play with the Maze located on this page and have a think about how you could solve even the simplest of problems, by breaking down the problem to that of one we can easily solve through fundamental algorithms that are readily used in the subject of Graph Theory.</h4>
+
+ 			<h3>Thanks for checking out this illustrative example of a topic that I am passionate about!</h3>
+
+  			<p><a href="#" rel="modal:close">Close</a></p>
+		</div>
+
+		<div id="whatisitgame" class="modal">
+ 			<h3>Thank you for taking the time to have a play with the maze, which is powered with some Graph Theory!</h3>
+
+ 			<ol>
+ 				<li>Build Your Maze: 
+ 					<ul>
+ 						<li>Add some walls- click the "Add Wall" button</li>
+ 						<li>(Optional) Click on the Maze and your Walls</li>
+ 						<li>(Optional) Add a custom Start Point and Exit Point</li>
+ 					</ul>
+ 				</li>
+ 				<li>Solve the Maze with one of the provided Graph Algorithms:
+ 					<ul>BFS - watch the maze get solved with a "breadth first approach"</ul>
+ 					<ul>DFS - watch the maze get solved with a "depth first approach"</ul>
+ 				</li>
+ 				<li>Congrats! You have just run some fundamental Graph Traversal Algorithms!</li>
+
+ 			</ol>
+
+  			<p><a href="#" rel="modal:close">Close</a></p>
+		</div>
+
+		<footer><h4>An interactive example of Graph Theory - Ashley Menhennett</h4></footer>
+
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/jquery.modal.min.js"></script>
+  		<script src="js/maze.js"></script>
+	</body>
+</html>
